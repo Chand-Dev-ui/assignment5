@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Gourmet Delight</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a:hover {
+            color: #e67e22;
+        }
+
+        /* Section Container */
+        .container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: #7f8c8d;
+        }
+
+        /* Food Grid */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .food-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .food-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-info {
+            padding: 1.5rem;
+        }
+
+        .food-info h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .food-info .price {
+            color: #e67e22;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            margin: 0 1rem;
+            color: #bdc3c7;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gourmet Delight</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="section-title">
+            <h2>Our Delicious Menu</h2>
+            <p>Explore our wide variety of food categories</p>
+        </div>
+
+        <div class="food-grid">
+            <!-- Burgers -->
+            <div class="food-card">
+                <img src="images/burger.jpg" alt="Burger">
+                <div class="food-info">
+                    <h3>Zinger Burger</h3>
+                    <p class="price">$8.99</p>
+                    <p>Crispy chicken fillet with spicy mayo and lettuce.</p>
+                </div>
+            </div>
+
+            <!-- Pizza -->
+            <div class="food-card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <div class="food-info">
+                    <h3>Cheese Burst Pizza</h3>
+                    <p class="price">$12.50</p>
+                    <p>Extra cheesy pizza with a blend of four different cheeses.</p>
+                </div>
+            </div>
+
+            <!-- BBQ -->
+            <div class="food-card">
+                <img src="images/bbq.jpg" alt="BBQ">
+                <div class="food-info">
+                    <h3>Chicken Tikka</h3>
+                    <p class="price">$10.00</p>
+                    <p>Marinated chicken chunks grilled over charcoal.</p>
+                </div>
+            </div>
+
+            <!-- Fast Food - Sandwich -->
+            <div class="food-card">
+                <img src="images/sandwich.jpg" alt="Sandwich">
+                <div class="food-info">
+                    <h3>Club Sandwich</h3>
+                    <p class="price">$6.50</p>
+                    <p>Three layers of bread with egg, chicken, and fresh veggies.</p>
+                </div>
+            </div>
+
+            <!-- Fast Food - Fries -->
+            <div class="food-card">
+                <img src="images/fries.jpg" alt="Fries">
+                <div class="food-info">
+                    <h3>Masala Fries</h3>
+                    <p class="price">$3.99</p>
+                    <p>Crispy golden fries tossed in our special spicy masala.</p>
+                </div>
+            </div>
+
+            <!-- Fast Food - Pasta -->
+            <div class="food-card">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <div class="food-info">
+                    <h3>White Sauce Pasta</h3>
+                    <p class="price">$9.50</p>
+                    <p>Creamy pasta with mushrooms and grilled chicken.</p>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="food-card">
+                <img src="images/ice-cream.jpg" alt="Ice Cream">
+                <div class="food-info">
+                    <h3>Chocolate Sundae</h3>
+                    <p class="price">$4.99</p>
+                    <p>Rich chocolate ice cream with fudge and nuts.</p>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="food-card">
+                <img src="images/juice.jpg" alt="Juice">
+                <div class="food-info">
+                    <h3>Fresh Orange Juice</h3>
+                    <p class="price">$3.50</p>
+                    <p>100% natural orange juice freshly squeezed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gourmet Delight Restaurant. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
